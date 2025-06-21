@@ -25,7 +25,7 @@ class Generator(nn.Module):
 # Load model
 device = torch.device("cpu")
 G = Generator()
-G.load_state_dict(torch.load(r"C:\Users\ASUS\Desktop\Problem 3\mnist_generator.pth", map_location=device))
+G.load_state_dict(torch.load("mnist_generator.pth", map_location=device))
 G.eval()
 
 # Streamlit UI
